@@ -1,3 +1,4 @@
+import { IMatrix } from "src/models/IMatrix";
 
 /** S = cualquier número del 1 al 9
  * Escribe una función que tome una matriz no vacía de enteros ordenados en orden ascendente y 
@@ -6,7 +7,6 @@
  * Si el número de salida está fuera del rango [0, SS] (para S=6 el rango será [0, 66]),
  * lo borrará del array de salida. Por favor, no utilizar la ordenación integrada del lenguaje
  */
-import { IMatrix } from "src/models/IMatrix";
 const S = 8;
 const validateNumber = (num: number) => num < (S*11);
 
