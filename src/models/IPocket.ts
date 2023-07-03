@@ -1,3 +1,3 @@
 export interface IPocket {
-    monedas: number[];
+    coins: number[];
 }

@@ -10,7 +10,7 @@ import { IPocket } from "src/models/IPocket";
 export default function(pocket: IPocket){
     try{
         let sumatory: number = 0;
-        const coinsSorted: number[] = [...pocket.monedas].sort((a, b)=> a - b);
+        const coinsSorted: number[] = [...pocket.coins].sort((a, b)=> a - b);
         for (let index = 0; index < coinsSorted.length; index++) {
             if (coinsSorted[index] <= 0) {
                 throw RangeError("The data in array is not a positive integer");
