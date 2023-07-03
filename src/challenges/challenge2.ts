@@ -10,7 +10,7 @@ import { IMatrix } from "src/models/IMatrix";
 const S = 8;
 const validateNumber = (num: number) => num < (S*11);
 
-export default function(matrix: IMatrix){
+export default function orderNumbers(matrix: IMatrix){
     try {
         if (matrix.array.length === 0) {
             throw RangeError("The array is empty");

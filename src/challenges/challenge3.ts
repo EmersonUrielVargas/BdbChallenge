@@ -7,7 +7,7 @@ import { IPocket } from "src/models/IPocket";
  * son necesariamente únicas (es decir, puede tener varias monedas del mismo valor)
  */
 
-export default function(pocket: IPocket){
+export default function getMinInvalidChangeCoins(pocket: IPocket){
     try{
         let sumatory: number = 0;
         const coinsSorted: number[] = [...pocket.coins].sort((a, b)=> a - b);
